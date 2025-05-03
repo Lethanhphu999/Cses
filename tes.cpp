@@ -1,7 +1,6 @@
-#include <iostream>
-#include <memory>
-#include <unordered_map>
-#include <typeindex>
+#include<bits/stdc++.h>
+
+using namespace std;
 
 // Component base - không cần virtual!
 struct IComponent {
@@ -60,17 +59,91 @@ struct MyDocument : public RuntimeComposerBase {
         }
     }
 };
-int main() {
-    MyDocument doc;
-    doc.Add(std::make_unique<NameComponent>("My Document"));
-    doc.Print(); // Output: Name: My Document
 
-    if (doc.Has<NameComponent>()) {
-        std::cout << "Document has a name component\n";
-    } else {
-        std::cout << "Document does not have a name component\n";
+void PrefixSum() {
+    vector<int> arr = {1,2,3,4,5,6};
+    
+    vector<int> prefixsum(arr.size(), 0);
+
+    int cul = 0;
+    for (int i = 0; i < arr.size(); i++) {
+        cul += arr[i];
+        prefixsum[i] = arr[i];
     }
 
+    cout << prefixsum[2] - prefixsum[1];
+
+}
+
+void SparseTable() {
+    int dp[8][8]= {0};
+    vector<int> arr = {1,3,4,8,6,1,4,2}; 
+    for (int i = 0; i < 8; i++) {
+        dp[i][i] = arr[i];
+    }
+    for (int j = 0x2; j <= 8; j=j<<1) {
+        for (int i = 0; i < 8; i++) {
+            // a = i
+            // b = i + j - 1
+            // w = (b - a  + 1) / 2
+            // q(a, b) = min(q(a, a + w - 1), q(a + w, b));
+            if (i + j - 1 < 8) {
+                dp[i][i + j - 1] = std::min(dp[i][i + j/ 2 - 1],dp[i + j/2][i + j - 1]);
+            }
+        }
+    }
+
+}
+
+
+
+void SlidingWindowMin() {
+    deque<pair<int, int>> q;
+
+    int n, k;
+    cin >> n >> k;
+    vector<int> a(n);
+    for (auto &e : a) {
+        cin >> e;
+    }
+    int l = 0, r = 0;
+    for (int i = 0; i + k - 1 < n; i++) {
+        if (!i) {
+            for (int j = 0; j < k; j++) {
+                while (!q.empty() && a[j] <= q.back().first) {
+                    q.pop_back();
+                }
+                q.emplace_back(a[j], r++);
+            }
+        } else { 
+            if (l == q.front().second) {
+                q.pop_front();
+            }
+            ++l;
+            while (!q.empty() && a[i + k - 1] <= q.back().first) {
+                q.pop_back();
+            }
+            q.emplace_back(a[i + k - 1], r++);
+        }
+
+        cout << q.front().first << " ";
+    }
+
+}
+
+int main() {
+    // MyDocument doc;
+    // doc.Add(std::make_unique<NameComponent>("My Document"));
+    // doc.Print(); // Output: Name: My Document
+
+    // if (doc.Has<NameComponent>()) {
+    //     std::cout << "Document has a name component\n";
+    // } else {
+    //     std::cout << "Document does not have a name component\n";
+    // }
+    //SparseTable();
+    SlidingWindowMin();
+    //std::cout << 31 - __builtin_clz(32);
     return 0;
 }    
     
