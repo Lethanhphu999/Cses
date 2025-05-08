@@ -131,6 +131,35 @@ void SlidingWindowMin() {
 
 }
 
+struct BinaryIndexedTree {
+    BinaryIndexedTree(std::vector<int> arr) {
+        tree.assign(arr.size() + 1,0);
+        for (int i = 0; i < arr.size(); ++i) {
+            add(arr[i], i);
+        }
+    }
+
+    void add(int a, int idx) {
+        for (int i = idx + 1; i < tree.size(); i += -i & i) {
+            tree[i] += a;
+        }
+    }
+
+    int query(int r) {
+        int result = 0;
+        for (int i = r + 1; i > 0; i -= -i & i) {
+            result += tree[i];
+        }
+        return result;
+    }
+
+    int query(int l, int r) {
+        return query(r) - query(l - 1);
+    }
+
+    std::vector<int> tree;
+};
+
 int main() {
     // MyDocument doc;
     // doc.Add(std::make_unique<NameComponent>("My Document"));
