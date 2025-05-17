@@ -1,21 +1,33 @@
-# Visual Studio
+# Ignore Visual Studio workspace and database files
+.vs/
 **/.vs/
-*.vcxproj.user
 *.suo
-*.user
-*.userosscache
-*.sln.docstates
+*.VC.db
+*.VC.opendb
+*.tlog
 
-# Build results
-Debug/
-Release/
-*/x64/
-*/x86/
-*.exe
-*.obj
-*.pdb
+# Ignore backup and layout files
+*.backup.json
+*DocumentLayout.json
+
+# Ignore build output and debug files
 *.ilk
 *.log
+*.obj
+*.pdb
+*.idb
+*.exe
+*.db
+
+# Ignore all Debug and Release folders
+Debug/
+Release/
+x64/
+x86/
+*/Debug/
+*/Release/
+**/x64/
+**/x86/
 
 # OS generated files
 # .DS_Store is a macOS-specific file that stores custom attributes of a folder.
