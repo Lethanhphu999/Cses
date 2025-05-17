@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Cses\\Code\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5C56CC-D92F-4748-B920-F7CAF8374979}|Code\\Code.vcxproj|D:\\Cses\\Code\\Code\\TowerofHanoi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{BD5C56CC-D92F-4748-B920-F7CAF8374979}|Code\\Code.vcxproj|solutionrelative:Code\\TowerofHanoi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TowerofHanoi.cpp",
+              "DocumentMoniker": "D:\\Cses\\Code\\Code\\TowerofHanoi.cpp",
+              "RelativeDocumentMoniker": "Code\\TowerofHanoi.cpp",
+              "ToolTip": "D:\\Cses\\Code\\Code\\TowerofHanoi.cpp",
+              "RelativeToolTip": "Code\\TowerofHanoi.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-17T05:07:51.453Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
