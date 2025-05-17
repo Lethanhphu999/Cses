@@ -1,0 +1,24 @@
+# Visual Studio
+**/.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+Debug/
+Release/
+*/x64/
+*/x86/
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.log
+
+# OS generated files
+# .DS_Store is a macOS-specific file that stores custom attributes of a folder.
+.DS_Store
+# Thumbs.db is a Windows-specific file that stores thumbnail cache for images.
+Thumbs.db
