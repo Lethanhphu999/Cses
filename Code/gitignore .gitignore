@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+Debug/
+Release/
+x64/
+x86/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

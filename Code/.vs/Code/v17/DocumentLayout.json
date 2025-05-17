@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Cses\\Code\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Cses\\Code\\gitignore .gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gitignore .gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD5C56CC-D92F-4748-B920-F7CAF8374979}|Code\\Code.vcxproj|D:\\Cses\\Code\\Code\\TowerofHanoi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{BD5C56CC-D92F-4748-B920-F7CAF8374979}|Code\\Code.vcxproj|solutionrelative:Code\\TowerofHanoi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "gitignore .gitignore",
+              "DocumentMoniker": "D:\\Cses\\Code\\gitignore .gitignore",
+              "RelativeDocumentMoniker": "gitignore .gitignore",
+              "ToolTip": "D:\\Cses\\Code\\gitignore .gitignore",
+              "RelativeToolTip": "gitignore .gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-17T05:48:08.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TowerofHanoi.cpp",
               "DocumentMoniker": "D:\\Cses\\Code\\Code\\TowerofHanoi.cpp",
               "RelativeDocumentMoniker": "Code\\TowerofHanoi.cpp",
               "ToolTip": "D:\\Cses\\Code\\Code\\TowerofHanoi.cpp",
               "RelativeToolTip": "Code\\TowerofHanoi.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-17T05:07:51.453Z",
               "EditorCaption": ""
